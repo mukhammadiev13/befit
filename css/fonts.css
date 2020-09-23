@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('../fonts/FSElliotPro.eot');
+    src: url('../fonts/FSElliotPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FSElliotPro-Heavy.woff2') format('woff2'),
+    url('../fonts/FSElliotPro.woff') format('woff'),
+    url('../fonts/FSElliotPro.ttf') format('truetype'),
+    url('../fonts/FSElliotPro.svg#FSElliotPro-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal
+}
+@font-face {
+    font-family: 'FS Elliot Pro Light';
+    /*src: url('../fonts/FSElliotPro-Light.eot');*/
+    /*src: url('../fonts/FSElliotPro-Light.eot?#iefix') format('embedded-opentype'),*/
+    url('../fonts/FSElliotPro-Light.woff2') format('woff2'),
+    url('../fonts/FSElliotPro-Light.woff') format('woff'),
+    url('../fonts/FSElliotPro-Light.ttf') format('truetype'),
+    url('../fonts/FSElliotPro-Light.svg#FSElliotPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+select:focus, button:focus, input:focus{
+    outline: none;
+}
+input:focus{
+    border-color: #53D500 !important;
+    box-shadow: none !important;
+}
+input{
+    transition: .2s ease;
+}
+a{
+    text-decoration: none !important;
+    transition: .2s ease;
+}
+
+.btn-add{
+    display: block;
+    border: 0;
+    background-color: #53D500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 8px 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff !important;
+    padding: 15px 30px !important;
+    transition: .2s ease;
+    margin-bottom: 0 !important;
+}
+.btn-add:hover{
+    background-color: #54e100;
+}
+.btn-add svg{
+    margin-right: 15px;
+}
+.btn-add.tab-active svg path{
+    fill: #fff !important;
+}
+.btn-add:hover svg path{
+    fill: #fff !important;
+}
+
+.btn-white{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    padding: 12px 40px;
+}
+.btn-white:hover{
+    color: #fff;
+    background-color: #53D500;
+}
+
+.no-order__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F1F4F9;
+    border: 1px dashed #A9B0B9;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #858C97;
+    padding: 30px;
+    transition: .2s ease;
+}
+.no-order__btn:hover{
+    color: #333;
+    border: 1px solid #53D500;
+}
+.no-order__btn svg{
+    margin-right: 20px;
+}
+.no-order__btn svg path{
+    transition: 1s ease;
+}
+.no-order__btn:hover svg path{
+    fill: #53D500;
+}
+
+.btn-out{
+    display: inline-block;
+    border: 1px solid #53D500;
+    background-color: #fff;
+    border-radius: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #53D500;
+    padding: 10px 40px;
+    transition: .2s ease;
+}
+.btn-out:hover{
+    color: #fff;
+    background-color: #53D500;
+}
+
+.btn-cancel:hover{
+    background-color: #fff;
+    color: #FC5733;
+    border-color: #FC5733;
+}
+
+.edit-link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+}
+.edit-link:hover{
+    color: #53D500;
+}
+
+.btn-green{
+    background-color: #53D500;
+    border-radius: 28px;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 36px;
+    transition: .2s ease;
+}
+.btn-green:hover{
+    background-color: #54e100;
+    color: #fff;
+}
+
+.btn-green-linear{
+    background: linear-gradient(90deg, #B5E12E 0%, #1AC915 100%);
+    box-shadow: 0 8px 16px rgba(40, 199, 0, 0.24);
+    border-radius: 28px;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 13px 36px;
+    transition: .2s ease;
+}
+.btn-green-linear:hover{
+    color: #fff;
+    background: linear-gradient(90deg, #c2f030 0%, #1adc15 100%);
+}
+
+.review-link{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #858C97;
+}
+.review-link:hover{
+    color: #222;
+}
+.review-icon{
+    margin-right: 5px;
+}
+.review-icon path{
+    transition: .2s ease;
+}
+.review-link:hover .review-icon path{
+    fill: #FFA031;
+    transform: translateY(-1px);
+}
+.reload-link{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #858C97;
+}
+.reload-link:hover{
+    color: #222;
+}
+.reload-icon{
+    margin-right: 5px;
+}
+.reload-icon path{
+    transition: .2s ease;
+}
+.reload-link:hover .reload-icon path{
+    transform-origin: center;
+    transform: rotate(20deg);
+    fill: #53D500;
+}
+.delete-link{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #858C97;
+}
+.delete-link:hover{
+    color: #222;
+}
+.delete-icon{
+    margin-right: 5px;
+}
+.delete-icon path{
+    transition: .2s ease;
+}
+.delete-link:hover .delete-icon path{
+    fill: #FC5733;
+    transform: translateY(-1px);
+}
+
+.saved-btn{
+    background-color: #F1F4F9;
+    border: 1px dashed #A9B0B9;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #53D500;
+    padding: 12px 20px;
+    text-align: left;
+    transition: .2s ease;
+}
+.saved-btn:hover{
+    background-color: #fff;
+}
+.saved-btn svg{
+    margin-right: 10px;
+}
+.saved-btn svg path{
+    transition: .2s ease;
+}
+.saved-btn:hover svg path{
+    transform: scale(1.025);
+}
